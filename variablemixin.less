@@ -1,0 +1,54 @@
+@font-color: #1d1d1e;
+@outline-color: #ebd827;
+@form-field-width: 240px;
+@form-field-height: 25px;
+@text-filler: 20px;
+@section-header: 40px;
+@small-header: 30px;
+@text-dates: 15px;
+@font-one: 'Shadows Into Light', cursive;
+@font-two: 'Open Sans Condensed', sans-serif;
+
+@media screen and (max-width: 768px) {
+   .navbar-nav  {
+   width: 30%;
+   float: right;
+   background-color: black;
+   margin: 0px -15px;
+   
+   
+   }
+   .navbar-nav li {
+       display: inline;
+       width: 100%;
+   }
+}
+
+
+
+
+
+.reset {
+    margin: 0;
+    padding: 0;
+}
+
+.border-radius(@form-field--border-radius: 5px) {
+  -webkit-border-radius: @form-field--border-radius;
+     -moz-border-radius: @form-field--border-radius;
+          border-radius: @form-field--border-radius;
+}
+
+
+.mixin (@outline-color) when (lightness(@outline-color) >= 50%) {   
+  background-color: @outline-color;
+  border: 1px solid black;
+}
+
+.mixin (@outline-color) when (lightness(@outline-color) < 50%) {
+  background-color: white;
+}
+
+.mixin (@outline-color@a) {
+  color: @a@outline-color;
+}

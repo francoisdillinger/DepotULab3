@@ -1,0 +1,321 @@
+@import 'variablemixin.less';
+
+
+
+
+
+
+
+html {
+    .reset;
+    
+       body {
+          .reset;
+       }
+}
+
+.row {
+    height: 60px;
+}
+
+#wrapper {
+    text-align: center;
+}
+.depot {
+    height: 50px;
+    width: 50px;
+    vertical-align: center;
+    background-color: #ebd827;
+}
+
+.navbar {
+    background-color: black;
+    //box-shadow: inset 0 0 20px 15px black;
+    height: 80px;
+}
+.navbar-nav {
+    margin-top: 15px;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 15px;
+    font-family: @font-one;
+    font-size: 25px;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    text-decoration: none;
+    float: left;
+    padding: 10px 15px 0;
+    color: yellow;
+}
+
+.navbar-header {
+    background-color: black;
+}
+.body {
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+
+hr {
+    border-top: 2px solid @outline-color;
+    max-width: 960px;
+}
+
+.name {
+    text-align: center;
+    color: @font-color;
+    font-family: @font-one;
+    font-size: 55px;
+}
+
+.job {
+    text-align: center;
+    color: @font-color;
+    font-family: @font-two;
+}
+
+.about {
+    overflow: hidden;
+    width: 100%;
+}
+
+.about h2 {
+    text-align: center;
+    color: @font-color;
+    font-family: @font-two;
+    font-size: @section-header;
+}
+
+.p1 {
+    max-width: 70%;
+    text-align: left;
+    color: @font-color;
+    margin:auto;
+    font-family: @font-one;
+    font-size: @text-filler;
+    
+}
+
+.p2 {
+    max-width: 70%;
+    text-align: left;
+    color: @font-color;
+    margin: auto;
+    font-family: @font-one;
+    font-size: @text-filler;
+    
+}
+
+.tech {
+    overflow: hidden;
+    width: 100%;
+}
+
+.tech h2 {
+    text-align: center;
+    color: @font-color;
+    height: 30px;
+    font-family: @font-two;
+    font-size: @section-header;
+}
+
+.p3 {
+    max-width: 70%;
+    text-align: left;
+    color: @font-color;
+    margin: auto;
+    font-family: @font-one;
+    font-size: @text-filler;
+}
+
+.p4 {
+    max-width: 70%;
+    text-align: left;
+    color: @font-color;
+    margin: auto;
+    font-family: @font-one;
+    font-size: @text-filler;
+}
+.projects h2 {
+    text-align: center;
+    color: @font-color;
+    font-family: @font-two;
+    font-size: @section-header;
+}
+
+.projects h3 {
+    color: @font-color;
+    margin: 5px auto 5px;
+    font-family: @font-two;
+    font-size: @small-header;
+    
+} 
+
+.projects p {
+    color: @font-color;
+    margin: auto;
+    font-size: @text-filler;
+    font-family: @font-one;
+}
+
+.experience {
+    overflow: hidden;
+    width: 100%;
+   
+}
+
+.experience h2 {
+    text-align: center;
+    color: @font-color;
+    font-family: @font-two;
+    font-size: @section-header;
+}
+
+.experience h3 {
+    color: @font-color;
+    margin: auto;
+    margin-left: 10px;
+    font-family: @font-two;
+    font-size: @small-header;
+}
+
+.experience h4 {
+    margin-left: 5%;
+    font-style: italic;
+    color: @font-color;
+    font-family: @font-one;
+    font-size: @text-dates;
+}
+
+.experience p {
+    margin-left: 5%;
+    color: @font-color;
+    font-family: @font-one;
+    font-size: @text-filler;
+}
+
+.education h2 {
+    text-align: center;
+    color: @font-color;
+    font-family: @font-two;
+    font-size: @section-header;
+}
+
+.education p {
+    margin-left: 5%;
+    color: @font-color;
+    font-family: @font-one;
+    font-size: @text-filler;
+}
+.contact h2 {
+    text-align: center;
+    color: @font-color;
+    font-family: @font-two;
+    font-size: @section-header;
+}
+
+fieldset {
+    width: 450px;
+    height: 350px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 20px auto 40px;
+    box-shadow: inset 0 0 20px 15px black;
+}
+
+form {
+    margin-top: 15px;
+}
+
+fieldset label {
+    margin: 3% 0 0 22%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: @font-two;
+    color: #ebd827;
+}
+.inputname {
+    .border-radius;
+    width: @form-field-width;
+    height: @form-field-height;
+    margin: 0 0 3% 22%;
+    font-size: 16px;
+    font-style: italic;
+    font-family: @font-two;
+}
+
+.inputemail {
+    .border-radius;
+    width: @form-field-width;
+    height: @form-field-height;
+    margin: 0 0 3% 22%;
+    font-size: 16px;
+    font-style: italic;
+    font-family: @font-two;
+}
+textarea {
+    .border-radius;
+    width: 240px;
+    height: 80px;
+    background-color: white;
+    margin: 0 0 0 22%;
+    font-size: 16px;  
+    line-height: normal; 
+    font-family: @font-two;
+}
+
+.button {
+    .border-radius;
+    width: @form-field-width;
+    height: @form-field-height;
+    margin: 0 0 5% 22%;
+    font-size: 16px;
+    background-color: white;
+    color: gray;
+    font-family: @font-two;
+}
+
+.button:hover {
+    .mixin(@outline-color);
+    color: darken(@outline-color, 50%)
+   
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    background-color: white;
+    //box-shadow: inset 0 0 20px 15px ;
+}
+
+
+footer a {
+       text-decoration: none;
+       color: @font-color;
+       margin: 10px;
+}
+ 
+ footer .git {
+     margin-bottom: -10px;
+     padding-top: 20px;
+ }
+   
+
+#link {
+    margin-top: 20px;
+}
+footer p {
+       font-style: italic;
+       color: @font-color;
+       padding-bottom: 10px;
+       margin-left: 70px;
+}
